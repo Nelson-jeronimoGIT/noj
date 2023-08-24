@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clientes</title>
+</head>
+<body>
+    <h1>clientes</h1>
+    <form action="crud_c method=post">
+        <imput type ="text" id= "txt_id" name="txt_id" aria-placeholder=" id">
+        <imput type ="text" id= "txt_nit" name="txt_nit" aria-placeholder=" nit">
+        <imput type ="text" id= "txt_nombres" name="txt_nombres" aria-placeholder=" nombres">
+        <imput type ="text" id= "txt_apellidos" name="txt_apellidos" aria-placeholder=" apellidos">
+        <imput type ="text" id= "txt_direccion" name="txt_direccion" aria-placeholder=" direccion">
+        <imput type ="text" id= "txt_telefono" name="txt_telefono" aria-placeholder=" telefono">
+        <imput type ="text" id= "txt_date" name="txt_fn" aria-placeholder=" yyyy-mm-dd">
+        <button type="submit"id="btn_crear"name="btn_crear" value="crear">crear</button>
+        <button type="submit"id="btn_actualizar"name="btn_actualizar" value="actualizar">actualizar</button>
+        <button type="submit"id="btn_borrar"name="btn_borrar" value="crear">borrar </button>
+    </form>
+    <table border="1px"
+    <thead>
+                    <th>id</th>
+                    <th>nit</th
+                    <th>nombres</th>
+                    <th>apellidos</th>
+                    <th>direccion</th>
+                    <th>telefono</th>
+                    <th>nacimiento</th>
+
+    </thead>
+    
+</tbody>
+<% users.forEach(cliente)=> { %>
+
+<tr>
+    <td><%= cliente.id_cliente%></td>
+    <td><%= cliente.nit%></td>
+    <td><%= cliente.nombres%></td>
+    <td><%= cliente.apelliods%></td>
+    <td><%= cliente.direccion%>1</td>
+    <td>1<%= cliente.telefono></td>
+    <td><%= cliente.fecha_nacimiento%></td>
+    <td>1</td>
+    <td>1</td>
+</tr>
+<% }); %>
+</tbody>
+</table>
+</body>
+html>
